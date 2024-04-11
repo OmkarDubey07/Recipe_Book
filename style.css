@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#addRecipe {
+  background-color: #f5c431;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+#recipeList {
+  margin-top: 20px;
+}
+
+.recipe {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16), 0 1px 5px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 2rem;
+  border-radius: 12px;
+}
+.recipe h2{
+  font-size:x-large;
+}
+.recipe button{
+  margin-top: 10px;
+  background-color: #f5c431;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.model {
+  display: none;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  border-radius: 25px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.closeBtn {
+  color: #cf3517;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+form {
+  text-align: center;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #221d40;
+}
+input,
+textarea {
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  :focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }
+}
+
+input[type="submit"] {
+  background-color: #f5c431;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
