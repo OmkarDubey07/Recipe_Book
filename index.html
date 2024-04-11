@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Recipe Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Good Tastes</h1>
+      <button id="addRecipe">Add Recipe</button>
+      <div id="recipeLists"></div>
+    </div>
+    <div id="promptBox" class="model">
+      <div class="modelContent">
+        <span class="closeBtn">X</span>
+        <h2>Add Your Dishes</h2>
+        <form id="recipeForm">
+          <label for="name">Title:</label> <br />
+          <input
+            type="text"
+            name="title"
+            id="name"
+            required
+            placeholder="Name here"
+          />
+          <br />
+          <br />
+          <label for="ingredients">Ingredients:</label><br />
+          <textarea
+            id="ingredients"
+            name="ingredients"
+            placeholder="Enter ingredients here"
+            required
+          ></textarea>
+          <br />
+          <br />
+          <label for="description">Description:</label><br />
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Describe here"
+            required
+          ></textarea>
+          <br />
+          <br />
+          <input type="submit" value="Add Recipe" />
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
